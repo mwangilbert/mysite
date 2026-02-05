@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4936079df7792bb49d8cbfa5d48f2f7a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4936079df7792bb49d8cbfa5d48f2f7a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4936079df7792bb49d8cbfa5d48f2f7a = L.map(
+                "map_4936079df7792bb49d8cbfa5d48f2f7a",
+                {
+                    center: [12.65813888888889, -6.987666666666666],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4502ebcb008046ee41453cf9e626add8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4502ebcb008046ee41453cf9e626add8.addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+            var circle_marker_40872471a7f09515d1bad43ab56f1c94 = L.circleMarker(
+                [13.242, -4.784],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_fc9d13f577b3b519a816f1eec38fbedd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08f89d5c2b26de81218dc947c8efa500 = $(`<div id="html_08f89d5c2b26de81218dc947c8efa500" style="width: 100.0%; height: 100.0%;">Station ID: TA00089<br>Name: Somo<br>Status: Ticketed<br>Datalogger ID: 06-02007</div>`)[0];
+                popup_fc9d13f577b3b519a816f1eec38fbedd.setContent(html_08f89d5c2b26de81218dc947c8efa500);
+            
+        
+
+        circle_marker_40872471a7f09515d1bad43ab56f1c94.bindPopup(popup_fc9d13f577b3b519a816f1eec38fbedd)
+        ;
+
+        
+    
+    
+            var circle_marker_803de4b21bd55be8b5d7c1844c77b4a3 = L.circleMarker(
+                [13.33, -4.734],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_7f134061f31f76f98832cc0730940320 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ea98e027111a80ef126bf3fb7128553 = $(`<div id="html_9ea98e027111a80ef126bf3fb7128553" style="width: 100.0%; height: 100.0%;">Station ID: TA00090<br>Name: Boutenisso<br>Status: Ticketed<br>Datalogger ID: 06-02058</div>`)[0];
+                popup_7f134061f31f76f98832cc0730940320.setContent(html_9ea98e027111a80ef126bf3fb7128553);
+            
+        
+
+        circle_marker_803de4b21bd55be8b5d7c1844c77b4a3.bindPopup(popup_7f134061f31f76f98832cc0730940320)
+        ;
+
+        
+    
+    
+            var circle_marker_7880b08ceb1c9a8e39b5d1f212891d1e = L.circleMarker(
+                [13.287, -4.622],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_269156b3db3c4d3b26fae12a3132594e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38971da7975822c2499f20bc32963b77 = $(`<div id="html_38971da7975822c2499f20bc32963b77" style="width: 100.0%; height: 100.0%;">Station ID: TA00092<br>Name: Bolimasso<br>Status: Ticketed<br>Datalogger ID: 06-02076</div>`)[0];
+                popup_269156b3db3c4d3b26fae12a3132594e.setContent(html_38971da7975822c2499f20bc32963b77);
+            
+        
+
+        circle_marker_7880b08ceb1c9a8e39b5d1f212891d1e.bindPopup(popup_269156b3db3c4d3b26fae12a3132594e)
+        ;
+
+        
+    
+    
+            var circle_marker_b36aacc21731a8710bb3ee17528d5677 = L.circleMarker(
+                [12.262, -5.493],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_e39c8903ebaf13e6f793eb889ae5cd43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b5f9f8e04bb10523942230842e3af4a = $(`<div id="html_8b5f9f8e04bb10523942230842e3af4a" style="width: 100.0%; height: 100.0%;">Station ID: TA00094<br>Name: Finkoloni<br>Status: Ticketed<br>Datalogger ID: 06-02059</div>`)[0];
+                popup_e39c8903ebaf13e6f793eb889ae5cd43.setContent(html_8b5f9f8e04bb10523942230842e3af4a);
+            
+        
+
+        circle_marker_b36aacc21731a8710bb3ee17528d5677.bindPopup(popup_e39c8903ebaf13e6f793eb889ae5cd43)
+        ;
+
+        
+    
+    
+            var circle_marker_898922b0b8160675493e57c6fbee78a4 = L.circleMarker(
+                [11.593, -5.714],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_07dee918f68403f70760bfb8820e1536 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e80788267a79bd8901a98386ffa47602 = $(`<div id="html_e80788267a79bd8901a98386ffa47602" style="width: 100.0%; height: 100.0%;">Station ID: TA00096<br>Name: Siramana<br>Status: Ticketed<br>Datalogger ID: 06-02070</div>`)[0];
+                popup_07dee918f68403f70760bfb8820e1536.setContent(html_e80788267a79bd8901a98386ffa47602);
+            
+        
+
+        circle_marker_898922b0b8160675493e57c6fbee78a4.bindPopup(popup_07dee918f68403f70760bfb8820e1536)
+        ;
+
+        
+    
+    
+            var circle_marker_867c9a74bfc903b8eacddd2c1a82a75d = L.circleMarker(
+                [10.822, -7.739],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_74e427d3079c00ad78012b2d58ede471 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdc44e92de83398ea99473af1687bf9f = $(`<div id="html_bdc44e92de83398ea99473af1687bf9f" style="width: 100.0%; height: 100.0%;">Station ID: TA00328<br>Name: Madina Diassa<br>Status: Ticketed<br>Datalogger ID: 06-01137</div>`)[0];
+                popup_74e427d3079c00ad78012b2d58ede471.setContent(html_bdc44e92de83398ea99473af1687bf9f);
+            
+        
+
+        circle_marker_867c9a74bfc903b8eacddd2c1a82a75d.bindPopup(popup_74e427d3079c00ad78012b2d58ede471)
+        ;
+
+        
+    
+    
+            var circle_marker_c069d73c3a792fe994d2469a600ef249 = L.circleMarker(
+                [11.891, -7.337],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_3a83707b09237c446821bd603a59596a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_803576677971fc31872e73be00bd36e5 = $(`<div id="html_803576677971fc31872e73be00bd36e5" style="width: 100.0%; height: 100.0%;">Station ID: TA00333<br>Name: Dogo<br>Status: No Ticket<br>Datalogger ID: 06-01154</div>`)[0];
+                popup_3a83707b09237c446821bd603a59596a.setContent(html_803576677971fc31872e73be00bd36e5);
+            
+        
+
+        circle_marker_c069d73c3a792fe994d2469a600ef249.bindPopup(popup_3a83707b09237c446821bd603a59596a)
+        ;
+
+        
+    
+    
+            var circle_marker_b3dec990e0acd6d8c9daa9afa71924ee = L.circleMarker(
+                [12.416, -5.442],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_dc54ddee0402cc05c9dee9aac6fb71c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bdea8e275927510ac35208c5171cda3 = $(`<div id="html_3bdea8e275927510ac35208c5171cda3" style="width: 100.0%; height: 100.0%;">Station ID: TA00334<br>Name: Institut de Formation Professionnelle Malick Sidibe LTAK<br>Status: No Ticket<br>Datalogger ID: 06-01164</div>`)[0];
+                popup_dc54ddee0402cc05c9dee9aac6fb71c3.setContent(html_3bdea8e275927510ac35208c5171cda3);
+            
+        
+
+        circle_marker_b3dec990e0acd6d8c9daa9afa71924ee.bindPopup(popup_dc54ddee0402cc05c9dee9aac6fb71c3)
+        ;
+
+        
+    
+    
+            var circle_marker_9b45b8ae7c9eb736a00be96d32ff487d = L.circleMarker(
+                [11.853, -6.018],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_42424e57f42e53f994fc60e5f415b2e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd8aa5c0555e9a75ee1c8a2772ca8ca3 = $(`<div id="html_fd8aa5c0555e9a75ee1c8a2772ca8ca3" style="width: 100.0%; height: 100.0%;">Station ID: TA00335<br>Name: Kignan<br>Status: Ticketed<br>Datalogger ID: 06-01157</div>`)[0];
+                popup_42424e57f42e53f994fc60e5f415b2e8.setContent(html_fd8aa5c0555e9a75ee1c8a2772ca8ca3);
+            
+        
+
+        circle_marker_9b45b8ae7c9eb736a00be96d32ff487d.bindPopup(popup_42424e57f42e53f994fc60e5f415b2e8)
+        ;
+
+        
+    
+    
+            var circle_marker_4c16a1dee5e46d14e30b6f7004e24d5f = L.circleMarker(
+                [11.324, -5.676],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_a243f90e3c9fe0e52bc7cb9c23d64545 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a56b4966db08100c638b582032ad479 = $(`<div id="html_6a56b4966db08100c638b582032ad479" style="width: 100.0%; height: 100.0%;">Station ID: TA00336<br>Name: Lycée Dedier De Montclos Sikasso<br>Status: Ticketed<br>Datalogger ID: 06-01141</div>`)[0];
+                popup_a243f90e3c9fe0e52bc7cb9c23d64545.setContent(html_6a56b4966db08100c638b582032ad479);
+            
+        
+
+        circle_marker_4c16a1dee5e46d14e30b6f7004e24d5f.bindPopup(popup_a243f90e3c9fe0e52bc7cb9c23d64545)
+        ;
+
+        
+    
+    
+            var circle_marker_248817da9c702b8bdebc469bc65ba141 = L.circleMarker(
+                [10.461, -7.449],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_16b491623763fc67acd2617b51699fca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9565dea9892d384e4f00c492a291d158 = $(`<div id="html_9565dea9892d384e4f00c492a291d158" style="width: 100.0%; height: 100.0%;">Station ID: TA00337<br>Name: Manankoro<br>Status: No Ticket<br>Datalogger ID: 06-01156</div>`)[0];
+                popup_16b491623763fc67acd2617b51699fca.setContent(html_9565dea9892d384e4f00c492a291d158);
+            
+        
+
+        circle_marker_248817da9c702b8bdebc469bc65ba141.bindPopup(popup_16b491623763fc67acd2617b51699fca)
+        ;
+
+        
+    
+    
+            var circle_marker_f34ec4019f1f2aeb816c999119418cc5 = L.circleMarker(
+                [10.789, -8.195],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_08a8b75a55ebf4de77bf365acc8545e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bd262e431231b32e8dd8d9d32b6232b = $(`<div id="html_0bd262e431231b32e8dd8d9d32b6232b" style="width: 100.0%; height: 100.0%;">Station ID: TA00338<br>Name: Kalana<br>Status: Ticketed<br>Datalogger ID: 06-01161</div>`)[0];
+                popup_08a8b75a55ebf4de77bf365acc8545e8.setContent(html_0bd262e431231b32e8dd8d9d32b6232b);
+            
+        
+
+        circle_marker_f34ec4019f1f2aeb816c999119418cc5.bindPopup(popup_08a8b75a55ebf4de77bf365acc8545e8)
+        ;
+
+        
+    
+    
+            var circle_marker_15612d423c5b070926ab896c5fdc21fc = L.circleMarker(
+                [13.255, -6.995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_c2decad9ac34a9eb32a3be4f4e2945c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69965b1cb89110b7ac2cba1376ee0576 = $(`<div id="html_69965b1cb89110b7ac2cba1376ee0576" style="width: 100.0%; height: 100.0%;">Station ID: TA00343<br>Name: Seguela<br>Status: Ticketed<br>Datalogger ID: 06-01140</div>`)[0];
+                popup_c2decad9ac34a9eb32a3be4f4e2945c5.setContent(html_69965b1cb89110b7ac2cba1376ee0576);
+            
+        
+
+        circle_marker_15612d423c5b070926ab896c5fdc21fc.bindPopup(popup_c2decad9ac34a9eb32a3be4f4e2945c5)
+        ;
+
+        
+    
+    
+            var circle_marker_098b21dcd3dcf3854b21bbf6be8a35e5 = L.circleMarker(
+                [12.798, -6.323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_2d5bf60c314008d29959a912184732f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a2a17694110a7f58d51b00c24ecdb86 = $(`<div id="html_2a2a17694110a7f58d51b00c24ecdb86" style="width: 100.0%; height: 100.0%;">Station ID: TA00344<br>Name: Gouendo<br>Status: Ticketed<br>Datalogger ID: 06-01153</div>`)[0];
+                popup_2d5bf60c314008d29959a912184732f1.setContent(html_2a2a17694110a7f58d51b00c24ecdb86);
+            
+        
+
+        circle_marker_098b21dcd3dcf3854b21bbf6be8a35e5.bindPopup(popup_2d5bf60c314008d29959a912184732f1)
+        ;
+
+        
+    
+    
+            var circle_marker_8b9a3aa502577c396c335183b8e1061f = L.circleMarker(
+                [13.238, -4.279],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_a99974bdb72117b1b99a6512ad87ff8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa51d0ec18f6d85b964ef27e47956770 = $(`<div id="html_aa51d0ec18f6d85b964ef27e47956770" style="width: 100.0%; height: 100.0%;">Station ID: TA00345<br>Name: Koula<br>Status: Ticketed<br>Datalogger ID: 06-01136</div>`)[0];
+                popup_a99974bdb72117b1b99a6512ad87ff8f.setContent(html_aa51d0ec18f6d85b964ef27e47956770);
+            
+        
+
+        circle_marker_8b9a3aa502577c396c335183b8e1061f.bindPopup(popup_a99974bdb72117b1b99a6512ad87ff8f)
+        ;
+
+        
+    
+    
+            var circle_marker_7fcee9620f540223c419c0af73704cbc = L.circleMarker(
+                [13.696, -6.059],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_be957e902ffb63f5d5fa131c29cddf0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_384e10cce37a30dc37a10827dde8e976 = $(`<div id="html_384e10cce37a30dc37a10827dde8e976" style="width: 100.0%; height: 100.0%;">Station ID: TA00346<br>Name: Ecole Privee Agropastorale Fatoumata Tienta<br>Status: Ticketed<br>Datalogger ID: 06-01135</div>`)[0];
+                popup_be957e902ffb63f5d5fa131c29cddf0e.setContent(html_384e10cce37a30dc37a10827dde8e976);
+            
+        
+
+        circle_marker_7fcee9620f540223c419c0af73704cbc.bindPopup(popup_be957e902ffb63f5d5fa131c29cddf0e)
+        ;
+
+        
+    
+    
+            var circle_marker_1e9cc7458fb4ca49cdfec0e21122777a = L.circleMarker(
+                [13.438, -6.274],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_8da96c3aebaba85415164525e8c7bc05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11eb076f85117d98cf6428985a8466d4 = $(`<div id="html_11eb076f85117d98cf6428985a8466d4" style="width: 100.0%; height: 100.0%;">Station ID: TA00347<br>Name: Segou<br>Status: No Ticket<br>Datalogger ID: 06-02030</div>`)[0];
+                popup_8da96c3aebaba85415164525e8c7bc05.setContent(html_11eb076f85117d98cf6428985a8466d4);
+            
+        
+
+        circle_marker_1e9cc7458fb4ca49cdfec0e21122777a.bindPopup(popup_8da96c3aebaba85415164525e8c7bc05)
+        ;
+
+        
+    
+    
+            var circle_marker_36b83687b28fb93b4c741ef817d155c2 = L.circleMarker(
+                [13.252, -5.957],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_db716611144e3127ec13b8f213f05f35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9753e2500a6d22238d6a083d53529f30 = $(`<div id="html_9753e2500a6d22238d6a083d53529f30" style="width: 100.0%; height: 100.0%;">Station ID: TA00348<br>Name: Cinzana Gate<br>Status: No Ticket<br>Datalogger ID: 06-01163</div>`)[0];
+                popup_db716611144e3127ec13b8f213f05f35.setContent(html_9753e2500a6d22238d6a083d53529f30);
+            
+        
+
+        circle_marker_36b83687b28fb93b4c741ef817d155c2.bindPopup(popup_db716611144e3127ec13b8f213f05f35)
+        ;
+
+        
+    
+    
+            var circle_marker_fe3bf596db90436b346bf9c64f29f1c1 = L.circleMarker(
+                [14.495, -4.189],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_cd83f64fb4f59ef0bb0f942400c42d17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_331187c0243e8267af16a00966d0c4ad = $(`<div id="html_331187c0243e8267af16a00966d0c4ad" style="width: 100.0%; height: 100.0%;">Station ID: TA00349<br>Name: Lycee De Mopti<br>Status: Ticketed<br>Datalogger ID: 06-01155</div>`)[0];
+                popup_cd83f64fb4f59ef0bb0f942400c42d17.setContent(html_331187c0243e8267af16a00966d0c4ad);
+            
+        
+
+        circle_marker_fe3bf596db90436b346bf9c64f29f1c1.bindPopup(popup_cd83f64fb4f59ef0bb0f942400c42d17)
+        ;
+
+        
+    
+    
+            var circle_marker_9233170edbde4e213a99f5b238973a9d = L.circleMarker(
+                [12.657, -7.921],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_a2bbf0238cf7d6a9392655c5e741aee9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34e2a86ef3d85e958cc133561a2b1968 = $(`<div id="html_34e2a86ef3d85e958cc133561a2b1968" style="width: 100.0%; height: 100.0%;">Station ID: TA00350<br>Name: Sotuba-CRRA<br>Status: Ticketed<br>Datalogger ID: 06-01146</div>`)[0];
+                popup_a2bbf0238cf7d6a9392655c5e741aee9.setContent(html_34e2a86ef3d85e958cc133561a2b1968);
+            
+        
+
+        circle_marker_9233170edbde4e213a99f5b238973a9d.bindPopup(popup_a2bbf0238cf7d6a9392655c5e741aee9)
+        ;
+
+        
+    
+    
+            var circle_marker_e94f5b51cab567eb6a054d94170286fd = L.circleMarker(
+                [12.554, -7.968],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_ad6b474db3e95bf4803aba44f4e9dbb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ace1a57617ea80ba279a89af4f3af163 = $(`<div id="html_ace1a57617ea80ba279a89af4f3af163" style="width: 100.0%; height: 100.0%;">Station ID: TA00364<br>Name: Mali-Meteo<br>Status: Ticketed<br>Datalogger ID: 06-01138</div>`)[0];
+                popup_ad6b474db3e95bf4803aba44f4e9dbb4.setContent(html_ace1a57617ea80ba279a89af4f3af163);
+            
+        
+
+        circle_marker_e94f5b51cab567eb6a054d94170286fd.bindPopup(popup_ad6b474db3e95bf4803aba44f4e9dbb4)
+        ;
+
+        
+    
+    
+            var circle_marker_4b38cc5cf5d604d96f2bc4459caef037 = L.circleMarker(
+                [12.92, -7.532],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_008b68617dbc3b9e374fde00be8a0e91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14d85ea2f03f67ee53d7798cf2ec19c2 = $(`<div id="html_14d85ea2f03f67ee53d7798cf2ec19c2" style="width: 100.0%; height: 100.0%;">Station ID: TA00365<br>Name: Katibougou<br>Status: Ticketed<br>Datalogger ID: 06-01144</div>`)[0];
+                popup_008b68617dbc3b9e374fde00be8a0e91.setContent(html_14d85ea2f03f67ee53d7798cf2ec19c2);
+            
+        
+
+        circle_marker_4b38cc5cf5d604d96f2bc4459caef037.bindPopup(popup_008b68617dbc3b9e374fde00be8a0e91)
+        ;
+
+        
+    
+    
+            var circle_marker_e4a345edc3f26898153c7c17598c1fce = L.circleMarker(
+                [11.645, -8.208],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_f9bcf72ce08fc6eaeff1f51b2c5780ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54045fac338223ea7b25b3c9c796c312 = $(`<div id="html_54045fac338223ea7b25b3c9c796c312" style="width: 100.0%; height: 100.0%;">Station ID: TA00366<br>Name: Selingue-Meteo<br>Status: No Ticket<br>Datalogger ID: 06-01142</div>`)[0];
+                popup_f9bcf72ce08fc6eaeff1f51b2c5780ac.setContent(html_54045fac338223ea7b25b3c9c796c312);
+            
+        
+
+        circle_marker_e4a345edc3f26898153c7c17598c1fce.bindPopup(popup_f9bcf72ce08fc6eaeff1f51b2c5780ac)
+        ;
+
+        
+    
+    
+            var circle_marker_0b4f315ebd962aeaf4bc56a5525e35c9 = L.circleMarker(
+                [12.636, -8.023],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_f99955f8d457fdb60dc8fa2ec55ab6b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a71a0bbb5ccdeec886b679db2079fdc = $(`<div id="html_0a71a0bbb5ccdeec886b679db2079fdc" style="width: 100.0%; height: 100.0%;">Station ID: TA00370<br>Name: Bamako-Ville<br>Status: Ticketed<br>Datalogger ID: 06-01150</div>`)[0];
+                popup_f99955f8d457fdb60dc8fa2ec55ab6b6.setContent(html_0a71a0bbb5ccdeec886b679db2079fdc);
+            
+        
+
+        circle_marker_0b4f315ebd962aeaf4bc56a5525e35c9.bindPopup(popup_f99955f8d457fdb60dc8fa2ec55ab6b6)
+        ;
+
+        
+    
+    
+            var circle_marker_4361d013069397f7da540a081e82b508 = L.circleMarker(
+                [11.861, -6.776],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_03959109968d28f1ac7eaea7780b61b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db2c9637c45c0de264e7e5810087c60e = $(`<div id="html_db2c9637c45c0de264e7e5810087c60e" style="width: 100.0%; height: 100.0%;">Station ID: TA00380<br>Name: Massigui<br>Status: Ticketed<br>Datalogger ID: 06-01004</div>`)[0];
+                popup_03959109968d28f1ac7eaea7780b61b3.setContent(html_db2c9637c45c0de264e7e5810087c60e);
+            
+        
+
+        circle_marker_4361d013069397f7da540a081e82b508.bindPopup(popup_03959109968d28f1ac7eaea7780b61b3)
+        ;
+
+        
+    
+    
+            var circle_marker_3cabe7cffb2661e2bfb4ee53176b3459 = L.circleMarker(
+                [12.226, -8.633],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_13657f3c4a14b94d82ed22fe7afeed0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94a0e8c70843f7cc2fbaaf1fd75b35e1 = $(`<div id="html_94a0e8c70843f7cc2fbaaf1fd75b35e1" style="width: 100.0%; height: 100.0%;">Station ID: TA00382<br>Name: Narena<br>Status: No Ticket<br>Datalogger ID: 06-01138</div>`)[0];
+                popup_13657f3c4a14b94d82ed22fe7afeed0b.setContent(html_94a0e8c70843f7cc2fbaaf1fd75b35e1);
+            
+        
+
+        circle_marker_3cabe7cffb2661e2bfb4ee53176b3459.bindPopup(popup_13657f3c4a14b94d82ed22fe7afeed0b)
+        ;
+
+        
+    
+    
+            var circle_marker_8803afcad8a9ba2a5d8c3dea2799bae5 = L.circleMarker(
+                [12.683, -9.227],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_e2bd2e67150b473c101ba2b9a24ea98f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bad352c4d2213de2b40a88b3fc9169e9 = $(`<div id="html_bad352c4d2213de2b40a88b3fc9169e9" style="width: 100.0%; height: 100.0%;">Station ID: TA00404<br>Name: Sirakoro<br>Status: Ticketed<br>Datalogger ID: 06-01151</div>`)[0];
+                popup_e2bd2e67150b473c101ba2b9a24ea98f.setContent(html_bad352c4d2213de2b40a88b3fc9169e9);
+            
+        
+
+        circle_marker_8803afcad8a9ba2a5d8c3dea2799bae5.bindPopup(popup_e2bd2e67150b473c101ba2b9a24ea98f)
+        ;
+
+        
+    
+    
+            var circle_marker_d9da03c615769cd9b621b637fba81cae = L.circleMarker(
+                [14.439, -11.449],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_0ba98e44639302f2db9ec391f82b4d38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_924be43ab8bce68f86b44e1d6c20e43c = $(`<div id="html_924be43ab8bce68f86b44e1d6c20e43c" style="width: 100.0%; height: 100.0%;">Station ID: TA00407<br>Name: Lycee Dougoukol Konare<br>Status: Ticketed<br>Datalogger ID: 06-01159</div>`)[0];
+                popup_0ba98e44639302f2db9ec391f82b4d38.setContent(html_924be43ab8bce68f86b44e1d6c20e43c);
+            
+        
+
+        circle_marker_d9da03c615769cd9b621b637fba81cae.bindPopup(popup_0ba98e44639302f2db9ec391f82b4d38)
+        ;
+
+        
+    
+    
+            var circle_marker_037a73d8d87c23502292b886cf46b18c = L.circleMarker(
+                [14.375, -11.365],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_f148832d7c8e8dab23c45e7e5228bc3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2aeae1be536526f8020e3f0746fde27d = $(`<div id="html_2aeae1be536526f8020e3f0746fde27d" style="width: 100.0%; height: 100.0%;">Station ID: TA00408<br>Name: Medine<br>Status: Ticketed<br>Datalogger ID: 06-01148</div>`)[0];
+                popup_f148832d7c8e8dab23c45e7e5228bc3c.setContent(html_2aeae1be536526f8020e3f0746fde27d);
+            
+        
+
+        circle_marker_037a73d8d87c23502292b886cf46b18c.bindPopup(popup_f148832d7c8e8dab23c45e7e5228bc3c)
+        ;
+
+        
+    
+    
+            var circle_marker_03a277688e04a795309232c9b6a7481f = L.circleMarker(
+                [13.505, -8.244],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_1c9221278488918e48cd091ce3695a2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30106b65dd2af651a8f268c2e5b9ce2e = $(`<div id="html_30106b65dd2af651a8f268c2e5b9ce2e" style="width: 100.0%; height: 100.0%;">Station ID: TA00702<br>Name: Guihoyo ecole fondamentale<br>Status: No Ticket<br>Datalogger ID: z6-05556</div>`)[0];
+                popup_1c9221278488918e48cd091ce3695a2b.setContent(html_30106b65dd2af651a8f268c2e5b9ce2e);
+            
+        
+
+        circle_marker_03a277688e04a795309232c9b6a7481f.bindPopup(popup_1c9221278488918e48cd091ce3695a2b)
+        ;
+
+        
+    
+    
+            var circle_marker_2ed6defe1c1f478fe058c50ab00c4eb8 = L.circleMarker(
+                [12.92, -7.532],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_2751f209ce95958e8010c6348d22c278 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e01f2a96dd016a1dbe3932b522c71185 = $(`<div id="html_e01f2a96dd016a1dbe3932b522c71185" style="width: 100.0%; height: 100.0%;">Station ID: TA00744<br>Name: CSAT-Katibougou<br>Status: No Ticket<br>Datalogger ID: z6-08537</div>`)[0];
+                popup_2751f209ce95958e8010c6348d22c278.setContent(html_e01f2a96dd016a1dbe3932b522c71185);
+            
+        
+
+        circle_marker_2ed6defe1c1f478fe058c50ab00c4eb8.bindPopup(popup_2751f209ce95958e8010c6348d22c278)
+        ;
+
+        
+    
+    
+            var circle_marker_1e15fba0a85cb5937544887993fb7db8 = L.circleMarker(
+                [12.626, -7.807],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_2f96d2276862fac1c83db1dccd0af00c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49935b8f720a1618a532fc279dcd72ed = $(`<div id="html_49935b8f720a1618a532fc279dcd72ed" style="width: 100.0%; height: 100.0%;">Station ID: TA00745<br>Name: CSAT-Baguineda<br>Status: No Ticket<br>Datalogger ID: z6-08539</div>`)[0];
+                popup_2f96d2276862fac1c83db1dccd0af00c.setContent(html_49935b8f720a1618a532fc279dcd72ed);
+            
+        
+
+        circle_marker_1e15fba0a85cb5937544887993fb7db8.bindPopup(popup_2f96d2276862fac1c83db1dccd0af00c)
+        ;
+
+        
+    
+    
+            var circle_marker_8403a888693b76bcacf47cb225b21a42 = L.circleMarker(
+                [13.278, -5.934],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_5eab69fbb1e127f2429daf989d8bee7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c96ebd4ccffdd1ff685644ffaeb4c5b = $(`<div id="html_3c96ebd4ccffdd1ff685644ffaeb4c5b" style="width: 100.0%; height: 100.0%;">Station ID: TA00746<br>Name: CSAT-Cinzana<br>Status: Ticketed<br>Datalogger ID: z6-06594</div>`)[0];
+                popup_5eab69fbb1e127f2429daf989d8bee7e.setContent(html_3c96ebd4ccffdd1ff685644ffaeb4c5b);
+            
+        
+
+        circle_marker_8403a888693b76bcacf47cb225b21a42.bindPopup(popup_5eab69fbb1e127f2429daf989d8bee7e)
+        ;
+
+        
+    
+    
+            var circle_marker_1d4f638fccca3891b30b4744bcf06314 = L.circleMarker(
+                [11.214, -5.458],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_fe1ebb9db3b48b175c6010ad4da737d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3111306e02c457f9d8f2527a761324dc = $(`<div id="html_3111306e02c457f9d8f2527a761324dc" style="width: 100.0%; height: 100.0%;">Station ID: TA00747<br>Name: CSAT-Farako<br>Status: Ticketed<br>Datalogger ID: z6-14394</div>`)[0];
+                popup_fe1ebb9db3b48b175c6010ad4da737d0.setContent(html_3111306e02c457f9d8f2527a761324dc);
+            
+        
+
+        circle_marker_1d4f638fccca3891b30b4744bcf06314.bindPopup(popup_fe1ebb9db3b48b175c6010ad4da737d0)
+        ;
+
+        
+    
+    
+            var circle_marker_dcc893d5a2cffc3c7dbb018237ea42c3 = L.circleMarker(
+                [15.031, -9.362],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_e0ff8d8e81dc6e9b0acf4965cff38a94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_924d8f82b2abdac3d65ef6ffbfc0b9f0 = $(`<div id="html_924d8f82b2abdac3d65ef6ffbfc0b9f0" style="width: 100.0%; height: 100.0%;">Station ID: TA00748<br>Name: CSAT-Bema<br>Status: No Ticket<br>Datalogger ID: z6-08534</div>`)[0];
+                popup_e0ff8d8e81dc6e9b0acf4965cff38a94.setContent(html_924d8f82b2abdac3d65ef6ffbfc0b9f0);
+            
+        
+
+        circle_marker_dcc893d5a2cffc3c7dbb018237ea42c3.bindPopup(popup_e0ff8d8e81dc6e9b0acf4965cff38a94)
+        ;
+
+        
+    
+    
+            var circle_marker_49d24e8cfecce76f6cc038b21f0021ce = L.circleMarker(
+                [11.681, -6.838],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+    
+        var popup_474fd17ca199232e311984d08908f110 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4fadff48c69c0a1a31d35d28d8aaee3 = $(`<div id="html_e4fadff48c69c0a1a31d35d28d8aaee3" style="width: 100.0%; height: 100.0%;">Station ID: TA00749<br>Name: Morila-Meteo<br>Status: Ticketed<br>Datalogger ID: z6-12030</div>`)[0];
+                popup_474fd17ca199232e311984d08908f110.setContent(html_e4fadff48c69c0a1a31d35d28d8aaee3);
+            
+        
+
+        circle_marker_49d24e8cfecce76f6cc038b21f0021ce.bindPopup(popup_474fd17ca199232e311984d08908f110)
+        ;
+
+        
+    
+    
+            tile_layer_4502ebcb008046ee41453cf9e626add8.addTo(map_4936079df7792bb49d8cbfa5d48f2f7a);
+        
+</script>
+</html>
